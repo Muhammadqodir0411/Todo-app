@@ -2,7 +2,12 @@ import { Button } from 'bootstrap';
 import React, { useState } from 'react';
 import './App.css';
 import Card from './componets/Card.js';
-import Todo from './componets/Todo.js'
+import Todo from './componets/Todo.js';
+import Header from './componets/Header';
+import Main from './componets/Main';
+import Category from './componets/Category';
+
+
 
 
 function App() {
@@ -29,7 +34,27 @@ const deleteHandler = (id)=>{
 
   return (
     <div className="App container">
-      <h2 className='text-center my-3'>Todo App</h2>
+      <Header/>
+      <Main/>
+      <Category/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <h2 className='text-center my-3'>Todo App</h2>
       <div className='card'>
         <div className='card-header'>
           <input
@@ -51,9 +76,10 @@ const deleteHandler = (id)=>{
               />))}
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
 
 export default App;
+
