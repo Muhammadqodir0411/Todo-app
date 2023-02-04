@@ -29,11 +29,11 @@ const Category = ({setCard}) => {
 
   return (
     <ul className="d-flex justify-content-evenly  py-5 mt-3 gap-5">
-      <li onClick={()=> categoryHandler("all")} className="text-primary">Barcha Mahsulotlar</li>
+      <li onClick={()=> categoryHandler("all")} className="text-black hover:text-blue-700">Barcha Mahsulotlar</li>
       {categories.map((category, i) => (
         <li
           onClick={() => categoryHandler(category)}
-          className="text-primary"
+          className="text-black"
           key={i}>
           {category}
         </li>

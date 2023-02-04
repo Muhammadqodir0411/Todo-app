@@ -20,7 +20,7 @@ const Main = () => {
               key={item.id}
               className="card w-25 p-2  d-flex justify-content-between flex-column">
               <img src={item.image} alt="image" height={350} />
-              <h5 className="mt-2">{item.title}</h5>
+              <h5 className="mt-2 text-center">{item.title}</h5>
               <div className="stars d-flex justify-content-center mt-2 mb-2 gap-1 ">
                 <img src={svg} alt="star" width={20} height={20} />
                 <img src={svg} alt="star" width={20} height={20} />
@@ -28,11 +28,12 @@ const Main = () => {
                 <img src={svg} alt="star" width={20} height={20} />
                 <img src={svg} alt="star" width={20} height={20} />
                 <h6 className="text-danger ms-3">
-                  <del> {item.price - 5}$ </del>
+                  <del className="text-decoration-thickness: 1px;">{item.price - 5}$</del>
                 </h6>
+                <h6 className="text-primary">{item.price}$</h6>
               </div>
 
-              <h6 className="text-primary">{item.price}$</h6>
+             
               <button className="btn  bg-primary text-warning">Buy Now</button>
             </div>
           );
